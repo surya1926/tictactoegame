@@ -67,7 +67,7 @@ boxes.forEach(box=>{
          if(count==9 && !isWinner){
             setTimeout(draw, 800);
           
-           Turn.innerHTML="";
+            Turn.innerHTML="Game Over..";
              disableBoxes();
         }
         // console.log(count);
@@ -120,9 +120,9 @@ const checkWinner=()=>{
                 cp2.classList.add("cp")
                 cp3.classList.add("cp")
                 setTimeout(winner, 1500);
-               resetBoxes.disabled=true;
+                resetBoxes.disabled=true;
                 document.querySelector(".winner").innerHTML="Congratulations"+pos1+"Won..!"
-                Turn.innerHTML="";
+                Turn.innerHTML="Game Over..";
                 count=0;
             disableBoxes();
             gameOver.play();
